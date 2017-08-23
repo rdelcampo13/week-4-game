@@ -1,0 +1,40 @@
+body {
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: auto 100%;
+}
+
+.caption p {
+  font-weight: bold;
+}
+
+.message {
+  font-weight: bold;
+}
+
+#attack {
+  margin-bottom: 20px;
+}
+
+#restart {
+  margin-bottom: 20px;
+}
+
+.dbz {
+width: 80%;
+}
+
+.header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}

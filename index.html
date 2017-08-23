@@ -3,8 +3,115 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
   </head>
   <body>
 
+  <div class="container">
+    <div class="row">
+      <div class="jumbotron text-center header">
+        <img src="./assets/images/dbz.png" class="dbz">
+        <h2>World Martial Arts Tournament</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-offset-1 col-md-offset-1 col-sm-3 col-md-3">
+        <div class="row hide" id="fighterBank">
+          <div class="well">
+            <div class="page-header text-center">
+              <h2>Fighter</h2>
+            </div>
+            <div class="row" id="selectedPlayer">
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4 col-md-4">
+        <span class="buttons" id="button-bank">
+          <div class="well message text-center">
+            <p id="message">Select at fighter to begin!</p>
+            <p id="fighter-damage"></p>
+            <p id="defender-damage"></p>
+          </div>
+          <button type="button" class="btn btn-primary btn-lg btn-block hide" id="attack">Attack</button>
+        </span>
+      </div>
+
+      <div class="col-sm-3 col-md-3">
+        <div class="row hide" id="defenderBank">
+          <div class="well">
+            <div class="page-header text-center">
+              <h2>Defender</h2>
+            </div>
+            <div class="row" id="defender">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row" id="playerBank">
+      <div class="well">
+        <div class="page-header">
+          <h1 id="playerBankTitle">Players:</h1>
+        </div>
+        <div class="row">
+
+          <div class="col-sm-3 col-md-3">
+            <div class="thumbnail players" id="goku" data-player="goku">
+              <img src="./assets/images/goku.png" alt="">
+              <div class="caption text-center">
+                <p id="goku-health"></p>
+                <p id="goku-attack"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-md-3">
+            <div class="thumbnail players" id="vegeta" data-player="vegeta">
+              <img src="./assets/images/vegeta.png" alt="">
+              <div class="caption text-center">
+                <p id="vegeta-health"></p>
+                <p id="vegeta-attack"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-md-3">
+            <div class="thumbnail players" id="buu" data-player="buu">
+              <img src="./assets/images/buu.png" alt="">
+              <div class="caption text-center">
+                <p id="buu-health"></p>
+                <p id="buu-attack"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3 col-md-3">
+            <div class="thumbnail players" id="hercule" data-player="hercule">
+              <img src="./assets/images/hercule.png" alt="">
+              <div class="caption text-center">
+                <p id="hercule-health"></p>
+                <p id="hercule-attack"></p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Link to javascript file -->
+  <script type="text/javascript" src="./assets/javascript/game.js"></script>
   </body>
 </html>
